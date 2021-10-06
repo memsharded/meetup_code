@@ -1,0 +1,13 @@
+[settings]
+os=Android
+os.api_level=23
+arch=armv7
+compiler=clang
+compiler.version=9
+compiler.libcxx=c++_static
+build_type=Release
+
+
+[conf]
+tools.android:ndk_path=C:\android-ndk-r21e
+tools.cmake.cmaketoolchain:generator=Ninja
