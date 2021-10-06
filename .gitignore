@@ -1,3 +1,7 @@
 test_package/build
 use/build
 build
+conan.lock
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
