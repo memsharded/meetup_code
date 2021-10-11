@@ -7,13 +7,6 @@ class ProtobufConan(ConanFile):
     name = "protobuf"
     version = "1.0"
 
-    # Optional metadata
-    license = "<Put the package license here>"
-    author = "<Put your name here> <And your email here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of Protobuf here>"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
-
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
 
