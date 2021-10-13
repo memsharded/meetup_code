@@ -31,7 +31,7 @@ class HelloConan(ConanFile):
         tc.generate()
 
     def build(self):
-        self.run("protoc", env="conanbuild")
+        self.run("protoc")
         cmake = CMake(self)
         cmake.configure()
         cmake.build()
