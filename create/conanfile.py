@@ -24,16 +24,16 @@ class HelloConan(ConanFile):
 
     def generate(self):
         tc = CMakeToolchain(self)
-        tc.generate()
+        tc.generate()  # creates conan_toolchain.cmake
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
+        cmake.configure()  # same as cmake . -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
+        cmake.build()  # same as cmake --build . --config <build_type>
 
     def package(self):
         cmake = CMake(self)
-        cmake.install()
+        cmake.install()  # same as cmake --install .
 
     def package_info(self):
         self.cpp_info.libs = ["hello"]
